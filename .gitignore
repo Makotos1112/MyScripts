@@ -1,0 +1,3 @@
+#候補ディレクトリと、VSコードのworkspaceファイルだけ無視設定
+standby/
+makotosblog.code-workspace
