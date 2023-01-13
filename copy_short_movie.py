@@ -26,7 +26,7 @@ https://www.makotosblog.com/howto_shortmovie/
 
 #参照フォルダの選択(動画単体ではなくフォルダ指定して実行)
 def select_dir_movies() :
-    def_dir_source = r"A:\Download\test\from"
+    def_dir_source = r"C:\\"
     dir_source = filedialog.askdirectory(initialdir = def_dir_source)
     source_movies = fr'{dir_source}\*.mp4'
 
@@ -39,7 +39,7 @@ def select_dir_movies() :
 
 #出力先フォルダの選択
 def select_dir_output() :
-    def_dir_destination = r"A:\Download\test\to"
+    def_dir_destination = r"C:\\"
     dir_destination = filedialog.askdirectory(initialdir = def_dir_destination)
     return dir_destination
 
@@ -70,7 +70,7 @@ def create_short_movie(movies, dir_destination, time):
                     comment += f"\n SUCCESS : 「{target[1]}」冒頭{time}秒 のショートコピーを作成しました。"
                     success_count += 1
                 except Exception:
-                    comment += f"\n FAILED : 「{target[1]}」冒頭{time}秒 のショートコピー作成に失敗しました。"
+                    comment += f"\n FAILURE : 「{target[1]}」冒頭{time}秒 のショートコピー作成に失敗しました。"
                     failure_count += 1
         else:
             comment += f"\n SKIP : 「{target[1]}_short_{time}sec.mp4」 は作成済みによりスキップしました。"
@@ -85,9 +85,9 @@ def create_short_movie(movies, dir_destination, time):
     スキップ(スキップ) :  {skip_count}
     切り取り失敗 :  {failure_count}
     """
-
     return comment
 
+#作業結果をテキストファイル出力
 def output_text(dir_destination, comment):
     txt = open(f'{dir_destination}/result.txt', 'w')
     txt.write(f'{comment}')
