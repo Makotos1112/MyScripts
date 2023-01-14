@@ -1,8 +1,21 @@
-#-*- coding: utf8 -*-
 import tkinter as tk
+
 import pyperclip
-from PIL import Image
-import subprocess
+
+"""
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■使い方と注意点■
+このファイルの使い方は下記のページで解説しています。
+
+[Python] よく使う単語を簡単にコピペできるツール
+: https://www.makotosblog.com/howto_addingtags/
+
+
+ご利用は自己責任でお願いします。
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+"""
+
 
 #表示させるボタンを管理する関数
 def assort_categories():
