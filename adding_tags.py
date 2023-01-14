@@ -164,8 +164,11 @@ def adding_tags(array_categories, keys_categories, length_categories):
 
 
 
+#### main関数でのファイル実行 #################################################
 def main():
     array_categories, keys_categories, length_categories = assort_categories()
     adding_tags(array_categories, keys_categories, length_categories)
+
 if __name__ == "__main__":
     main()
+    print(f'※※※このスクリプトは{__name__}で実行されました。※※※')
