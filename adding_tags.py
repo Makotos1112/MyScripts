@@ -119,7 +119,7 @@ def adding_tags(array_categories, keys_categories, length_categories):
 
 
 
-    # --- Frameの作成 -------------------------------------------------------
+    # --- Frameの作成 ------------------------------------------------------
     dict_frame = {}
     #カテゴリーの数だけフレームを作成する
     for num in range(length_categories):

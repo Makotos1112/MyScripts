@@ -93,7 +93,7 @@ def output_text(dir_destination, comment):
 
 
 
-#### main関数でのファイル実行 #################################################
+#### main関数でのファイル実行 ################################################
 def main():
     movies = select_dir_movies()
     dir_destination = select_dir_output()
