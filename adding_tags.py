@@ -7,11 +7,8 @@ import pyperclip
 ■使い方と注意点■
 このファイルの使い方は下記のページで解説しています。
 
-[Python] よく使う単語を簡単にコピペできるツール
+[Python] Wordpressのタグ打ちを楽にしてくれるツール [Wordpress]
 : https://www.makotosblog.com/howto_addingtags/
-
-
-ご利用は自己責任でお願いします。
 
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 """
